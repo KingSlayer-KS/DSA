@@ -1,4 +1,4 @@
-package OOPS;
+/*package OOPS;
 
 class student1{
     String name;
@@ -24,4 +24,4 @@ public class _static_ka_matlab  {
     }
 
 
-}
+}*/
