@@ -4,35 +4,36 @@ import java.util.Scanner;
 
 public class Switch_homework {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int a= sc.nextInt();
-        int b= sc.nextInt();
-        int c= sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
 
-        switch (c){
+        switch (c) {
             case 1:
-            System.out.println(a+b);
-            break;//add
+                System.out.println(a + b);
+                break;// add
 
             case 2:
-            System.out.println(a-b);
-            break;//minus
+                System.out.println(a - b);
+                break;// minus
 
             case 3:
-            System.out.println(a*b);
-            break;//multiply
+                System.out.println(a * b);
+                break;// multiply
 
             case 4:
-            System.out.println(a/b);
-            break;//divide
+                System.out.println(a / b);
+                break;// divide
 
             case 5:
-            System.out.println(a%b);
-            break;//mod
+                System.out.println(a % b);
+                break;// mod
 
             default:
-            System.out.println("Invalid_opperation");
+                System.out.println("Invalid_opperation");
+                sc.close();
         }
     }
-    
+
 }
