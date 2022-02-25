@@ -4,10 +4,16 @@ import java.util.*;
 
 public class Array {
     public static void main(String[] args) {
+        /*
+         * Syntax: type[] arrayname=new type[size];
+         * OR
+         * Syntax: type arrayname []=new type[size];
+         * indexing from zero
+         */
         int[] marks = new int[3];
-        marks[0] = 99;
-        marks[1] = 98;
-        marks[2] = 95;
+        marks[0] = 99;// phy
+        marks[1] = 98;// mat
+        marks[2] = 95;// chem
 
         // printing the array made
         System.out.println(marks);
@@ -23,18 +29,27 @@ public class Array {
         Arrays.sort(marks);
         System.out.println(marks[0]);
 
-        // array assignment
+        // array assignment alternative hwen we alredy know the size
         int[] mark = { 99, 98, 58 };
         System.out.println(mark);
+        System.out.println(marks[0]);
+        System.out.println(marks[1]);
+        System.out.println(marks[2]);
 
-        // 2D array
-        int[][] finale_marks = { { 96, 69, 99 }, { 58, 99, 98 } };
-        System.out.println(finale_marks[0][0]);
-        System.out.println(finale_marks[0][1]);
-        System.out.println(finale_marks[0][2]);
-        System.out.println(finale_marks[1][0]);
-        System.out.println(finale_marks[1][1]);
-        System.out.println(finale_marks[1][2]);
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] numbers = new int[3];
+
+        for (int i = 0; i < size; i++) {
+            numbers[i] = sc.nextInt();
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < size; i++) {
+            System.out.println(numbers[i]);
+        }
+        sc.close(); 
     }
 
 }
