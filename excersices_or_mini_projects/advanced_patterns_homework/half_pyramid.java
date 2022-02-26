@@ -1,4 +1,4 @@
-package advanced_patterns_homework;
+package excersices_or_mini_projects.advanced_patterns_homework;
 
 public class half_pyramid {
     public static void main(String[] args) {
