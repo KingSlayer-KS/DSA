@@ -4,6 +4,7 @@ import java.util.*;
 
 public class arylst {
     public static void main(String[] args) {
+        //Syntax: ArrayList<Integer> name = new ArrayList<Integer>();
         ArrayList<Integer> list2 = new ArrayList<Integer>();
         // add elements
         list2.add(0);
