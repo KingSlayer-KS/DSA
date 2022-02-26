@@ -2,7 +2,7 @@ package OOPS;
 
 interface Animal {
     int eyes = 2;
- 
+
     public void walk();
 
 }
@@ -10,7 +10,7 @@ interface Animal {
 interface herbivore {
 }
 
-//in a given java file only (interfaces) lets us use multiple inheritence  
+// in a given java file only (interfaces) lets us use multiple inheritence
 
 class lion implements Animal, herbivore {
     public void walk() {
