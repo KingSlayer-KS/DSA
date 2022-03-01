@@ -1,14 +1,14 @@
 package Recursion;
 
 public class Print_fibonachi_series {
-    public static void fibonacchi(int n0, int n1, int tot) {
+    public static void fibonacchi(int n0, int n1, int total_Nth) {
 
-        if (tot <= 0) {
+        if (total_Nth <= 0) {
             return;
         }
         int n3 = n0 + n1;
         System.out.print(n3+" ");
-        fibonacchi(n1, n3, --tot);
+        fibonacchi(n1, n3, --total_Nth);
 
     }
 
