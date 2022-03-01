@@ -4,7 +4,8 @@ public class Print_nos_5_to_1_using_recursion {
     public static void number(int n) {
         if (n == 0) {
             return;
-        }
+        }//base_case
+
         System.out.println(n);
         number(--n);
         /*
