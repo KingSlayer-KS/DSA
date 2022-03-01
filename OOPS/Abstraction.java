@@ -1,11 +1,11 @@
 package OOPS;
 
-abstract class animal {
+abstract class janvar {
     abstract void walk();
     public void pet_able(){}
 }
 
-class horse extends animal {
+class horse extends janvar {
     public void walk() {
         System.out.println("walk on 4 legs");
     }
@@ -16,7 +16,7 @@ class horse extends animal {
 
 }
 
-class chicken extends animal {
+class chicken extends janvar {
     public void walk() {
         System.out.println("walk on 2 legs");
     }
@@ -25,7 +25,7 @@ class chicken extends animal {
     }
 
 }
-class lion extends animal {
+class sher extends janvar {
     public void walk() {
         System.out.println("walk on 4 legs");
     }
@@ -38,7 +38,7 @@ class lion extends animal {
 
 public class Abstraction {
     public static void main(String[] args) {
-        lion l1= new lion();
+        sher l1= new sher();
         l1.walk();
         l1.pet_able();
 
