@@ -2,7 +2,11 @@ package Recursion;
 
 public class Print_factorial_of_n_number {
     public static void factorial(int n,int fact){
-        if(n  == 1){
+        
+        if(n  == 0){
+            System.out.println(fact);
+            return;}
+        else if(n  == 1){
             System.out.println(fact);
             return;
         }
