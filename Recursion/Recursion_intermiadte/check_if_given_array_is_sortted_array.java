@@ -6,7 +6,7 @@ public class check_if_given_array_is_sortted_array {
             System.out.println("Yes");
             return;
         }
-        if(aa[i-1]>aa[i] ){
+        if(aa[i-1]>=aa[i] ){
             System.out.println("NO");
             return;
         }
