@@ -1,9 +1,16 @@
 package OOPS;
 
 /*
-2 Types of polymorphism 
+
+2 Types of polymorphism
     [+]RUN TIME /Function  OVER-RIDING
     [+]COMLILE TIME /Function OVERLOADING
+
+    [-]Compile_time/overloading_polymorphism => same name vale function ko bar 
+                            bar use karna alag alag purpose ke lie 
+                            provided there are some differenciating factors 
+                            like return type/arguments types/number of arguments 
+
 
     IN this file we will discuss about COMPILE TIME only
     IN compile time polymorphism we make a lot of variables with same name 
@@ -42,8 +49,8 @@ public class polymorphism {
         Student2 s4 = new Student2("ar", 10);
 
         s1.print_info(s1.age);
-        s1.print_info(s1.name);
         s1.print_info(s1.name, s1.age);
+        s1.print_info(s1.name);
         System.out.println();
 
         s2.print_info(s2.age);

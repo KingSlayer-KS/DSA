@@ -1,6 +1,6 @@
 package Linked_list.Linked_list_question_imp;
 
-class Solution {
+class Loops_detection {
     
     public class ListNode {
         int val;

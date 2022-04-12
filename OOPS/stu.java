@@ -1,6 +1,6 @@
 package OOPS;
 
-/*
+/* 
 *constructor of class "xyz"=="xyz()" 
 *constructors doesnot return anything tough tey are type of functions
 */

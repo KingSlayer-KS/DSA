@@ -6,7 +6,7 @@ class Pen {
     String color;
 
     // function performed by pen or methods
-    // functions in clas sare called methods
+    // functions in clas s   are called methods
     public void write() {
         System.out.println("wrinting something");
     }

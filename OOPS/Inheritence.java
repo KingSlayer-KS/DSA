@@ -1,6 +1,7 @@
 package OOPS;
 /*
-Inheritence means inheriting the property/methods of a given class */
+
+Inheritence means inheriting the property/methods of a given class to new class */
 class Shape{
     String color;
 }

@@ -12,7 +12,7 @@ public class Tower_of_henoi {
         
     }
     public static void main(String[] args) {
-        int n=3;
+        int n=4;
         tower(n,"S","H","D");
 
     }
