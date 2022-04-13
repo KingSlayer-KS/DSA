@@ -1,11 +1,10 @@
 /*
 Time Complexity=O(n)
 */
+
 package Trees;
 
-import java.util.*;
-
-public class Level_order_traversal {
+public class count_of_nodes {
     static class Node {
         int data;
         Node left;
@@ -36,40 +35,21 @@ public class Level_order_traversal {
 
     }
 
-    public static void levelOrder(Node root) {
-        if (root == null) {
-            return;
+    public static int countOfNodes(Node root) {
+        if(root == null) {
+            return 0;
         }
-        Queue<Node> q = new LinkedList<>();
-        q.add(root);
-        q.add(null);
-        while (!q.isEmpty()) {
-            Node curr = q.remove();
-            if (curr == null) {
-                System.out.println();
-                // queue empty
-                if (q.isEmpty()) {
-                    break;
-                } else {
-                    q.add(null);
-                }
-            } else {
-                System.out.print(curr.data + " ");
-                if (curr.left != null) {
-                    q.add(curr.left);
-                }
-                if (curr.right != null) {
-                    q.add(curr.right);
-                }
-            }
-        }
+  
+        int leftNodes = countOfNodes(root.left);
+        int rightNodes = countOfNodes(root.right);
+        return leftNodes + rightNodes + 1;
     }
-
+ 
     public static void main(String[] args) {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildtree(nodes);
-        levelOrder(root);
+        countOfNodes(root);
     }
 
 }
