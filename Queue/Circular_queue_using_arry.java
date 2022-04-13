@@ -5,7 +5,7 @@ package Queue;
 public class Circular_queue_using_arry {
     static class Queue {
         static int arr[];
-        static int size;
+         int size;
         static int rear = -1;
         static int front = -1;
 
@@ -16,17 +16,17 @@ public class Circular_queue_using_arry {
         }
  
         // mt or not
-        public static Boolean is_mt() {
+        public  Boolean is_mt() {
             return rear == -1 && front == -1;
         }
 
         //is full
-        public static Boolean is_ful() {
+        public  Boolean is_ful() {
             return (rear + 1)%size ==  front;
         }
         
         // adding
-        public static void add(int val) {
+        public void add(int val) {
             if (is_ful()) {
                 System.out.println("Is full");
                 return;
@@ -41,7 +41,7 @@ public class Circular_queue_using_arry {
         }
 
         // deleting and returning
-        public static int remove() {
+        public int remove() {
             if (is_mt()) {
                 System.out.println("khali hai bro");
                 return -1;
@@ -57,7 +57,7 @@ public class Circular_queue_using_arry {
         }
 
         // peek
-        public static int peek() {
+        public  int peek() {
             if (is_mt()) {
                 System.out.println("khali hai bro");
                 return -1;

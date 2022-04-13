@@ -24,12 +24,12 @@ public class implementatin_using_Linked_list {
         static int front = -1;
 
         // mt or not
-        public static Boolean is_mt() {
+        public  Boolean is_mt() {
             return head == null && tail == null;
         }
 
         // adding
-        public static void add(int val) {
+        public  void add(int val) {
             Node newnode = new Node(val);
             if (tail == null) {
                 head = tail = newnode;
@@ -41,7 +41,7 @@ public class implementatin_using_Linked_list {
         }
 
         // deleting and returning
-        public static int remove() {
+        public  int remove() {
             if (is_mt()) {
                 System.out.println("khali hai bro");
                 return -1;
@@ -56,7 +56,7 @@ public class implementatin_using_Linked_list {
         }
 
         // peek
-        public static int peek() {
+        public  int peek() {
             
             return head.val;
         }

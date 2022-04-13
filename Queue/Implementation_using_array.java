@@ -5,7 +5,7 @@ package Queue;
 public class Implementation_using_array {
     static class Queue {
         static int arr[];
-        static int size;
+         int size;
         static int rear = -1;
 
         Queue(int size) {
@@ -14,12 +14,12 @@ public class Implementation_using_array {
         }
 
         // mt or not
-        public static Boolean is_mt() {
+        public  Boolean is_mt() {
             return rear == -1;
         }
 
         // adding
-        public static void add(int val) {
+        public  void add(int val) {
             if (rear == size - 1) {
                 System.out.println("Is full");
                 return;
@@ -30,7 +30,7 @@ public class Implementation_using_array {
         }
 
         // deleting and returning
-        public static int remove() {
+        public  int remove() {
             if (is_mt()) {
                 System.out.println("khali hai bro");
                 return -1;
@@ -45,7 +45,7 @@ public class Implementation_using_array {
         }
 
         // peek
-        public static int peek() {
+        public  int peek() {
             if (is_mt()) {
                 System.out.println("khali hai bro");
                 return -1;
