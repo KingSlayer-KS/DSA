@@ -49,7 +49,7 @@ public class count_of_nodes {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildtree(nodes);
-        countOfNodes(root);
+        System.out.println(countOfNodes(root));
     }
 
 }
