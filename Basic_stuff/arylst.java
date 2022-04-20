@@ -4,11 +4,11 @@ import java.util.*;
 
 public class arylst {
     public static void main(String[] args) {
-        //Syntax: ArrayList<Integer> name = new ArrayList<Integer>();
+        // Syntax: ArrayList<Integer> name = new ArrayList<Integer>();
         ArrayList<Integer> list2 = new ArrayList<Integer>();
         // add elements
         list2.add(0);
-        list2.add(1);
+        list2.add(11);
         list2.add(2);
         list2.add(3);
         System.out.println(list2);
