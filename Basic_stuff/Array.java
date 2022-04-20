@@ -32,9 +32,9 @@ public class Array {
         // array assignment alternative hwen we alredy know the size
         int[] mark = { 99, 98, 58 };
         System.out.println(mark);
-        System.out.println(marks[0]);
         System.out.println(marks[1]);
-        System.out.println(marks[2]);
+        System.out.println(marks[3]);
+        System.out.println(marks[3]);
 
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
